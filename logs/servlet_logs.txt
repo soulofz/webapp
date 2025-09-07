@@ -1,0 +1,7 @@
+Servlet Initialized: 2025-09-07T19:29:33.528475100
+Servlet Service :2025-09-07T19:29:33.528475100 | Method :GET | URI :/webapp/writelog
+Servlet Initialized: 2025-09-07T19:30:24.388912900
+Servlet Service :2025-09-07T19:30:24.388912900 | Method :GET | URI :/webapp/writelog
+Servlet Service :2025-09-07T19:30:30.809004600 | Method :GET | URI :/webapp/writelog
+Servlet Initialized: 2025-09-07T19:38:46.835227200
+Servlet Service :2025-09-07T19:38:46.836644100 | Method :GET | URI :/webapp/writelog
