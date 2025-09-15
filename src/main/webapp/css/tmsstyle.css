@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+.code-text {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 3em;
+    font-weight: bold;
+}
+.yellow {
+    color: yellow;
+}
+.white {
+    color: white;
+}
+.line {
+    display: block;
+}
+.tag-line {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+.secondthirdline{
+    padding-left: 45px;
+}
