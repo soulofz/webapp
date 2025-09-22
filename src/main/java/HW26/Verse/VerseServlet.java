@@ -1,4 +1,4 @@
-package Verse;
+package HW26.Verse;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

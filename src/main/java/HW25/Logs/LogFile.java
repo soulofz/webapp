@@ -1,4 +1,4 @@
-package Logs;
+package HW25.Logs;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;

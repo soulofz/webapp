@@ -1,4 +1,4 @@
-package AgeServlet;
+package HW25.AgeServlet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-package BookServlets;
+package HW26.BookServlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;

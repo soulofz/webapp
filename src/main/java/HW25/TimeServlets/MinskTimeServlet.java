@@ -1,4 +1,4 @@
-package TimeServlets;
+package HW25.TimeServlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
