@@ -1,6 +1,7 @@
 package HW33;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class User {
     private int id;
@@ -8,10 +9,10 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
-    private LocalDate created;
-    private LocalDate updated;
+    private LocalDateTime created;
+    private LocalDateTime updated;
 
-    public User(int id, String username, String password, String firstName, String lastName, LocalDate created, LocalDate updated) {
+    public User(int id, String username, String password, String firstName, String lastName, LocalDateTime created, LocalDateTime updated) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -61,19 +62,19 @@ public class User {
         this.lastName = lastName;
     }
 
-    public LocalDate getCreated() {
+    public LocalDateTime getCreated() {
         return created;
     }
 
-    public void setCreated(LocalDate created) {
+    public void setCreated(LocalDateTime created) {
         this.created = created;
     }
 
-    public LocalDate getUpdated() {
+    public LocalDateTime getUpdated() {
         return updated;
     }
 
-    public void setUpdated(LocalDate updated) {
+    public void setUpdated(LocalDateTime updated) {
         this.updated = updated;
     }
 

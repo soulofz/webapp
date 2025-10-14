@@ -4,6 +4,7 @@ package HW33;
 import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,8 +65,8 @@ public class UserRepository {
                 String password = resultSet.getString("password");
                 String firstName = resultSet.getString("first_name");
                 String lastname = resultSet.getString("last_name");
-                LocalDate created = resultSet.getTimestamp("created").toLocalDateTime().toLocalDate();
-                LocalDate updated = resultSet.getTimestamp("updated").toLocalDateTime().toLocalDate();
+                LocalDateTime created = resultSet.getTimestamp("created").toLocalDateTime();
+                LocalDateTime updated = resultSet.getTimestamp("updated").toLocalDateTime();
                 users.add(new User(id, username, password, firstName, lastname, created, updated));
             }
         } catch (SQLException | ClassNotFoundException | IOException exception) {
