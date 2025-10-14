@@ -21,9 +21,6 @@ public class User {
         this.updated = updated;
     }
 
-    public User (int id, String username, String password, String firstName, String lastName) {
-    }
-
     public int getId() {
         return id;
     }
