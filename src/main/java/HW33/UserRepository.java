@@ -12,7 +12,7 @@ public class UserRepository {
     private static final String INSERT_USER = "INSERT INTO users(id,username,password,first_name,last_name,created,updated) VALUES(DEFAULT,?,?,?,?,?,?)";
     private static final String UPDATE_USER = "UPDATE users SET username = ? ,password = ?,first_name = ?,last_name = ?,updated = CURRENT_TIMESTAMP WHERE id = ?";
     private static final String DELETE_USER = "DELETE FROM users WHERE id = ?";
-    private static final String SELECT_ALL = "SELECT * FROM users";
+    private static final String SELECT_ALL_USERS = "SELECT * FROM users";
 
     public void insertUser(User user) {
         try (Connection connection = DataBaseConnection.getConnection();
@@ -57,7 +57,7 @@ public class UserRepository {
     public List<User> getAllUsers() {
         List<User> users = new ArrayList<>();
         try (Connection connection = DataBaseConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL)) {
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS)) {
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
