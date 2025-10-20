@@ -64,9 +64,30 @@
       <artifactId>postgresql</artifactId>
       <version>42.7.8</version>
     </dependency>
+    
+    <!-- Flyway" -->
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-database-postgresql</artifactId>
+      <version>11.3.0</version>
+    </dependency>
   </dependencies>
 
   <build>
     <finalName>webapp</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.flywaydb</groupId>
+        <artifactId>flyway-maven-plugin</artifactId>
+        <version>11.3.1</version>
+        <configuration>
+          <url>jdbc:postgresql://localhost:5432/first_database</url>
+          <user>postgres</user>
+          <password>root</password>
+          <cleanDisabled>false</cleanDisabled>
+          <baselineVersion>2.1.0</baselineVersion>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>

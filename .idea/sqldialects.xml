@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V2_1_1__added_operation_table.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migration/V2_1_2__added_customer_operation_table.sql" dialect="PostgreSQL" />
+  </component>
+</project>
