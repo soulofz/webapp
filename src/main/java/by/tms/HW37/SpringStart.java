@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("by.tms")
+@ComponentScan("by.tms/HW37")
 public class SpringStart {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringStart.class);
