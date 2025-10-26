@@ -7,17 +7,17 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Scope(BeanDefinition.SCOPE_PROTOTYPE)
+@Scope(BeanDefinition.SCOPE_SINGLETON)
 @Component("beanPlayer")
 public class Player {
     private String name = "Misha";
     private int age = 25;
     private int rating = 257;
-    private GameCS game;
+    private Game game;
 
 
     @Autowired
-    public Player (GameCS game) {
+    public Player (Game game) {
         this.game = game;
     }
 
@@ -55,11 +55,11 @@ public class Player {
         this.rating = rating;
     }
 
-    public GameCS getGame() {
+    public Game getGame() {
         return game;
     }
 
-    public void setGame(GameCS game) {
+    public void setGame(Game game) {
         this.game = game;
     }
 }
