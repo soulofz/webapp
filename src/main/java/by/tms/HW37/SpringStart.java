@@ -13,6 +13,9 @@ public class SpringStart {
         Player player = (Player) context.getBean("beanPlayer");
         System.out.println(player.getName());
         System.out.println(player.getGame());
+        Player player2 = (Player) context.getBean("beanPlayer");
+        System.out.println(player2.getName());
+        System.out.println(player2.getGame());
         Student student = (Student) context.getBean("beanStudent");
         System.out.println(student.getName());
 
