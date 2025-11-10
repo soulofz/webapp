@@ -1,7 +1,8 @@
-package by.tms.HW39.service;
+package by.tms.HW39and40.service;
 
-import by.tms.HW39.model.User;
-import by.tms.HW39.repository.UserRepository;
+import by.tms.HW39and40.model.User;
+import by.tms.HW39and40.model.UserRegistrationDto;
+import by.tms.HW39and40.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
 
@@ -15,15 +16,15 @@ public class SecurityService {
         this.userRepository = userRepository;
     }
 
-    public boolean registration(String username, String password) {
+    public boolean registration(UserRegistrationDto userRegistrationDto) {
         User user = new User();
-        user.setUsername(username);
-        user.setPassword(password);
+        user.setUsername(userRegistrationDto.getUsername());
+        user.setPassword(userRegistrationDto.getPassword());
         user.setCreated(new Timestamp(System.currentTimeMillis()));
         user.setUpdated(new Timestamp(System.currentTimeMillis()));
 
         try {
-            return userRepository.insertUser(user, password) > 0;
+            return userRepository.insertUser(user, userRegistrationDto.getPassword()) > 0;
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

@@ -1,4 +1,4 @@
-package by.tms.HW39.config;
+package by.tms.HW39and40.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

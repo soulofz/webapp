@@ -1,11 +1,9 @@
-package by.tms.HW39.repository;
+package by.tms.HW39and40.repository;
 
-import by.tms.HW33.DataBaseConnection;
-import by.tms.HW39.model.User;
+import by.tms.HW39and40.model.User;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
 
-import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

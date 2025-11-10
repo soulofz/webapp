@@ -1,6 +1,6 @@
-package by.tms.HW39.controllers;
+package by.tms.HW39and40.controllers;
 
-import by.tms.HW39.service.UserService;
+import by.tms.HW39and40.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

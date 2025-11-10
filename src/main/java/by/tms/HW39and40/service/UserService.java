@@ -1,7 +1,7 @@
-package by.tms.HW39.service;
+package by.tms.HW39and40.service;
 
-import by.tms.HW39.model.User;
-import by.tms.HW39.repository.UserRepository;
+import by.tms.HW39and40.model.User;
+import by.tms.HW39and40.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 

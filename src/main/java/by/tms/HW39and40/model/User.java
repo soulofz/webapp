@@ -1,4 +1,4 @@
-package by.tms.HW39.model;
+package by.tms.HW39and40.model;
 
 import java.sql.Timestamp;
 
